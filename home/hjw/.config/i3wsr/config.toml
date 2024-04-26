@@ -1,0 +1,19 @@
+[icons]
+"Microsoft-edge" = ""
+Thunar = ""
+kitty = ""
+KeePassXC = ""
+obsidian = ""
+wps = "󱔘"
+code-oss = ""
+
+[general]
+default_icon = ""
+split_at = ":"
+empty_label = "🌕"
+display_property = "instance"
+
+[options]
+remove_duplicates = true
+no_names = false
+no_icon_names = false
