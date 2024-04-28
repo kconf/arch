@@ -10,16 +10,22 @@ efibootmgr
 
 sudo
 zsh
+wget
+vcsh
 
 broadcom-wl-dkms
 linux-headers
 networkmanager
 
 openssh
+iptables-nft
+clash-verge
 
 pavucontrol
-pulseaudio
 alsa-utils
+pipewire
+pipewire-pulse
+brightnessctl
 
 archlinuxcn-keyring
 paru
@@ -30,6 +36,7 @@ xorg-server
 xorg-xinit
 xorg-xrandr
 autorandr
+arandr
 
 debugedit
 fakeroot
@@ -54,6 +61,7 @@ adobe-source-han-sans-cn-fonts
 adobe-source-han-serif-cn-fonts
 ttf-jetbrains-mono-nerd
 ttf-firacode-nerd
+ttf-iosevka-term
 
 code
 obsidian
