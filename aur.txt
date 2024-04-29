@@ -1,6 +1,0 @@
-i3wsr
-wps-office
-ttf-wps-fonts
-microsoft-edge-stable-bin
-fcitx5-input-support
-

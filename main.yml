@@ -68,6 +68,7 @@
         state: present
         name:
           - vcsh
+          - sshfs
           - code
           - obsidian
           - zotero-bin
