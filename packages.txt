@@ -66,3 +66,4 @@ ttf-iosevka-term
 code
 obsidian
 zotero-bin
+zeal
