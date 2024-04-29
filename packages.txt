@@ -67,3 +67,4 @@ code
 obsidian
 zotero-bin
 zeal
+keepassxc

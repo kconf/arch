@@ -1,0 +1,95 @@
+- hosts: all
+  tasks:
+    - name: install base packages
+      become: true
+      package:
+        state: present
+        name:
+          - base
+          - linux
+          - linux-firmware
+          - grub
+          - efibootmgr
+          - sudo
+          - zsh
+          - wget
+          - archlinuxcn-keyring
+          - paru
+          - yay
+    - name: install hardware packages
+      become: true
+      package:
+        state: present
+        name:
+          - broadcom-wl-dkms
+          - linux-headers
+          - networkmanager
+          - openssh
+          - iptables-nft
+          - clash-verge
+          - pavucontrol
+          - alsa-utils
+          - pipewire
+          - pipewire-pulse
+          - brightnessctl
+    - name: install desktop packages
+      become: true
+      package:
+        state: present
+        name:
+          - xdg-utils
+          - xorg-server
+          - xorg-xinit
+          - xorg-xrandr
+          - autorandr
+          - arandr
+          - i3
+          - i3status-rust
+          - rofi
+          - kitty
+          - maim
+          - xclip
+          - thunar
+          - fcitx5-rime
+          - fcitx5-nord
+          - fcitx5-configtool
+          - nodejs-material-design-icons
+          - noto-fonts
+          - noto-fonts-cjk
+          - noto-fonts-emoji
+          - adobe-source-han-sans-cn-fonts
+          - adobe-source-han-serif-cn-fonts
+          - ttf-jetbrains-mono-nerd
+          - ttf-firacode-nerd
+          - ttf-iosevka-term
+    - name: install user packages
+      become: true
+      package:
+        state: present
+        name:
+          - vcsh
+          - code
+          - obsidian
+          - zotero-bin
+          - zeal
+          - keepassxc
+    - name: install microsoft edge depends packages
+      become: true
+      package:
+        state: present
+        name:
+          - debugedit
+          - fakeroot
+    - name: install AUR packages
+      become: true
+      package:
+        state: present
+        executable: yay
+        name:
+          - i3wsr
+          - wps-office
+          - ttf-wps-fonts
+          - microsoft-edge-stable-bin
+          - fcitx5-input-support
+
+

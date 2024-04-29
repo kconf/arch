@@ -5,4 +5,4 @@ if [ ! -f $HOME/.local/bin/pipx ]; then
   python3 -m pipx ensurepath
 fi
 
-pipx install ansible-core
+pipx install --include-deps ansible
