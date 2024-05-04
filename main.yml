@@ -67,13 +67,16 @@
       package:
         state: present
         name:
-          - vcsh
-          - sshfs
           - code
-          - obsidian
-          - zotero-bin
-          - zeal
           - keepassxc
+          - mpv
+          - npm
+          - obsidian
+          - rsync
+          - sshfs
+          - vcsh
+          - zeal
+          - zotero-bin
     - name: install microsoft edge depends packages
       become: true
       package:
@@ -81,6 +84,7 @@
         name:
           - debugedit
           - fakeroot
+          - pkgconf
     - name: install AUR packages
       become: true
       package:
@@ -88,6 +92,8 @@
         executable: yay
         name:
           - i3wsr
+          - dingtalk-bin
+          - wemeet-bin
           - wps-office
           - ttf-wps-fonts
           - microsoft-edge-stable-bin
