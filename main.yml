@@ -6,6 +6,7 @@
         state: present
         name:
           - base
+          - base-devel
           - linux
           - linux-firmware
           - grub
@@ -32,6 +33,8 @@
           - pipewire
           - pipewire-pulse
           - brightnessctl
+          - bluez
+          - bluez-utils
     - name: install desktop packages
       become: true
       package:
@@ -72,19 +75,13 @@
           - mpv
           - npm
           - obsidian
+          - pandoc
+          - pandoc-crossref
           - rsync
           - sshfs
           - vcsh
           - zeal
           - zotero-bin
-    - name: install microsoft edge depends packages
-      become: true
-      package:
-        state: present
-        name:
-          - debugedit
-          - fakeroot
-          - pkgconf
     - name: install AUR packages
       become: true
       package:
@@ -98,5 +95,6 @@
           - ttf-wps-fonts
           - microsoft-edge-stable-bin
           - fcitx5-input-support
+          - epson-inkjet-printer-escpr2
 
 
