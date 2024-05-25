@@ -2,11 +2,20 @@
 
 ## Arch Linux
 
+- Add `archlinuxcn` repository
+
+See [pacman.conf](./etc/pacman.conf) for details.
+
+~~~ sh
+pacman-key --lsign-key "farseerfc@archlinux.org"
+pacman -Sy archlinuxcn-keyring
+~~~
+
 - Show installed packages
 
-~~~ sh 
+~~~ sh
 comm -23 <(pacman -Qqett | sort) <(pacman -Qqg base-devel | sort | uniq)
-~~~ 
+~~~
 
 - Install packages from a file containing all packages
 
@@ -42,4 +51,4 @@ Finally run:
 ~~~ sh
 sudo systemctl restart nix-daemon
 home-manager switch
-~~~ 
+~~~
