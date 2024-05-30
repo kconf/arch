@@ -70,7 +70,6 @@
       package:
         state: present
         name:
-          - code
           - keepassxc
           - mpv
           - npm
@@ -78,7 +77,9 @@
           - pandoc
           - pandoc-crossref
           - rsync
+          - fuse
           - sshfs
+          - mergerfs
           - vcsh
           - zeal
           - zotero-bin
@@ -94,6 +95,7 @@
           - wps-office
           - ttf-wps-fonts
           - microsoft-edge-stable-bin
+          - visual-studio-code-bin
           - fcitx5-input-support
           - epson-inkjet-printer-escpr2
 
