@@ -7,16 +7,18 @@
         name:
           - base
           - base-devel
+          - archlinuxcn-keyring
+          - efibootmgr
+          - grub
           - linux
           - linux-firmware
-          - grub
-          - efibootmgr
-          - sudo
-          - zsh
-          - wget
-          - archlinuxcn-keyring
+          - openssh
           - paru
+          - sudo
+          - vcsh
+          - wget
           - yay
+          - zsh
     - name: install hardware packages
       become: true
       package:
@@ -25,7 +27,6 @@
           - broadcom-wl-dkms
           - linux-headers
           - networkmanager
-          - openssh
           - iptables-nft
           - clash-verge
           - pavucontrol
@@ -80,7 +81,6 @@
           - fuse
           - sshfs
           - mergerfs
-          - vcsh
           - zeal
           - zotero-bin
     - name: install AUR packages

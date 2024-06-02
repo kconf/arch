@@ -1,8 +1,11 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
-if [ ! -f $HOME/.local/bin/pipx ]; then
-  python3 -m pip install --user pipx
-  python3 -m pipx ensurepath
+if [ ! -f $HOME/.local/bin/micromamba ]; then
+	echo "Install micromamba ..."
+	"${SHELL}" <(curl -L micro.mamba.pm/install.sh)
+	mkdir -p $HOME/micromamba
 fi
 
-pipx install --include-deps ansible
+if [ ! -d $HOME/.config/vcsh/repo.d/python.git ]; then
+	vcsh clone git@github.com:kconf/python.git python
+fi
