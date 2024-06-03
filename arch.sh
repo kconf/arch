@@ -36,7 +36,7 @@ sudo pacman -Syuu --noconfirm
 #: }}}
 
 #: Basic setup {{{
-sudo pacman -S --needed --noconfirm base base-devel linux linux-firmware sudo zsh wget archlinuxcn-keyring vcsh git openssh
+sudo pacman -S --needed --noconfirm base base-devel linux linux-firmware sudo zsh wget archlinuxcn-keyring vcsh git openssh bluez bluez-utils
 #: }}}
 
 #: Desktop wm {{{
@@ -47,7 +47,7 @@ source ./i3.sh
 source ./fonts.sh
 
 #: Applications {{{
-sudo pacman -S --needed --noconfirm keepassxc mpv npm obsidian pandoc pandoc-crossref rsync fuse sshfs mergerfs zeal zotero-bin
+sudo pacman -S --needed --noconfirm keepassxc mpv npm obsidian pandoc pandoc-crossref rsync fuse sshfs mergerfs zeal zotero-bin clash-verge
 #: }}}
 
 #: AUR {{{

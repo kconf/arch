@@ -28,7 +28,6 @@
           - linux-headers
           - networkmanager
           - iptables-nft
-          - clash-verge
           - pavucontrol
           - alsa-utils
           - pipewire
@@ -71,6 +70,7 @@
       package:
         state: present
         name:
+          - clash-verge
           - keepassxc
           - mpv
           - npm
