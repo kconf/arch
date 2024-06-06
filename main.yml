@@ -76,7 +76,7 @@
           - npm
           - obsidian
           - pandoc
-          - pandoc-crossref
+          - quarto-cli-bin
           - rsync
           - fuse
           - sshfs

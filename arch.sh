@@ -53,7 +53,7 @@ source ./i3.sh
 source ./fonts.sh
 
 #: Applications {{{
-sudo pacman -S --needed --noconfirm keepassxc mpv npm obsidian pandoc pandoc-crossref rsync fuse sshfs mergerfs zeal zotero-bin clash-verge
+sudo pacman -S --needed --noconfirm keepassxc mpv npm obsidian pandoc quarto-cli-bin rsync fuse sshfs mergerfs zeal zotero-bin clash-verge
 #: }}}
 
 #: AUR {{{
