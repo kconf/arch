@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# vim:foldmethod=marker
 
 set -e
 
@@ -36,7 +37,12 @@ sudo pacman -Syuu --noconfirm
 #: }}}
 
 #: Basic setup {{{
-sudo pacman -S --needed --noconfirm base base-devel linux linux-firmware sudo zsh wget archlinuxcn-keyring vcsh git openssh bluez bluez-utils
+sudo pacman -S --needed --noconfirm base base-devel linux linux-firmware sudo zsh wget archlinuxcn-keyring vcsh git openssh paru
+#: }}}
+
+#: Hardware {{{
+sudo pacman -S --needed --noconfirm bluez bluez-utils
+paru -S --needed --noconfirm epson-inkjet-printer-escpr2
 #: }}}
 
 #: Desktop wm {{{
@@ -51,8 +57,11 @@ sudo pacman -S --needed --noconfirm keepassxc mpv npm obsidian pandoc pandoc-cro
 #: }}}
 
 #: AUR {{{
-sudo pacman -S --needed --noconfirm paru
-paru -S --needed --noconfirm i3wsr dingtalk-bin wemeet-bin wps-office ttf-wps-fonts microsoft-edge-stable-bin visual-studio-code-bin fcitx5-input-support epson-inkjet-printer-escpr2
+paru -S --needed --noconfirm i3wsr dingtalk-bin wemeet-bin wps-office ttf-wps-fonts microsoft-edge-stable-bin visual-studio-code-bin fcitx5-input-support
+#: }}}
+
+#: Flatpak {{{
+sudo pacman -S --needed --noconfirm flatpak
 #: }}}
 
 source ./nix.sh
