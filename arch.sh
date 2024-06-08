@@ -33,6 +33,10 @@ sudo cp ./etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist
 sudo pacman-key --lsign-key "farseerfc@archlinux.org"
 sudo pacman -S --needed --noconfirm archlinuxcn-keyring
 
+sudo pacman-key --recv-keys 7931B6D628C8D3BA
+sudo pacman-key --finger 7931B6D628C8D3BA
+sudo pacman-key --lsign-key 7931B6D628C8D3BA
+
 sudo pacman -Syuu --noconfirm
 #: }}}
 
@@ -53,11 +57,11 @@ source ./i3.sh
 source ./fonts.sh
 
 #: Applications {{{
-sudo pacman -S --needed --noconfirm keepassxc mpv npm obsidian pandoc quarto-cli-bin rsync fuse sshfs mergerfs zeal zotero-bin clash-verge
+sudo pacman -S --needed --noconfirm keepassxc mpv npm obsidian quarto-cli-bin rsync fuse sshfs mergerfs zeal zotero-bin clash-verge okular imagemagick microsoft-edge-stable-bin visual-studio-code-bin
 #: }}}
 
 #: AUR {{{
-paru -S --needed --noconfirm i3wsr dingtalk-bin wemeet-bin wps-office ttf-wps-fonts microsoft-edge-stable-bin visual-studio-code-bin fcitx5-input-support
+paru -S --needed --noconfirm i3wsr dingtalk-bin wemeet-bin wps-office ttf-wps-fonts fcitx5-input-support
 #: }}}
 
 #: Flatpak {{{

@@ -75,7 +75,6 @@
           - mpv
           - npm
           - obsidian
-          - pandoc
           - quarto-cli-bin
           - rsync
           - fuse
