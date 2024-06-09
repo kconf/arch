@@ -50,7 +50,7 @@ paru -S --needed --noconfirm epson-inkjet-printer-escpr2
 #: }}}
 
 #: Desktop wm {{{
-sudo pacman -S --needed --noconfirm xdg-utils xorg-server xorg-xinit xorg-xrandr autorandr arandr i3 i3status-rust rofi kitty maim xclip thunar fcitx5-rime fcitx5-nord fcitx5-configtool
+sudo pacman -S --needed --noconfirm xdg-utils xorg-server xorg-xinit xorg-xrandr autorandr arandr i3 i3status-rust rofi kitty wezterm maim xclip thunar fcitx5-rime fcitx5-nord fcitx5-configtool
 #: }}}
 
 source ./i3.sh
