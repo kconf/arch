@@ -30,9 +30,11 @@ echo "Setup mirrors"
 sudo cp ./etc/pacman.conf /etc/pacman.conf
 sudo cp ./etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist
 
+# Key for archlinuxcn
 sudo pacman-key --lsign-key "farseerfc@archlinux.org"
 sudo pacman -S --needed --noconfirm archlinuxcn-keyring
 
+# Key for arch4edu
 sudo pacman-key --recv-keys 7931B6D628C8D3BA
 sudo pacman-key --finger 7931B6D628C8D3BA
 sudo pacman-key --lsign-key 7931B6D628C8D3BA
@@ -46,22 +48,28 @@ sudo pacman -S --needed --noconfirm base base-devel linux linux-firmware sudo zs
 
 #: Hardware {{{
 sudo pacman -S --needed --noconfirm bluez bluez-utils
-paru -S --needed --noconfirm epson-inkjet-printer-escpr2
+paru -S --needed --noconfirm epson-inkjet-printer-escpr footswitch-git
 #: }}}
 
 #: Desktop wm {{{
-sudo pacman -S --needed --noconfirm xdg-utils xorg-server xorg-xinit xorg-xrandr autorandr arandr i3 i3status-rust rofi kitty wezterm maim xclip thunar fcitx5-rime fcitx5-nord fcitx5-configtool
+sudo pacman -S --needed --noconfirm xdg-utils xorg-server xorg-xinit xorg-xrandr autorandr arandr i3 i3status-rust rofi kitty wezterm maim xclip thunar
+paru -S --needed --noconfirm i3wsr
+#: }}}
+
+#: Input methods {{{
+sudo pacman -S --needed --noconfirm fcitx5-rime fcitx5-nord fcitx5-configtool
+paru -S --needed --noconfirm fcitx5-input-support
 #: }}}
 
 source ./i3.sh
 source ./fonts.sh
 
 #: Applications {{{
-sudo pacman -S --needed --noconfirm keepassxc mpv npm obsidian quarto-cli-bin rsync fuse sshfs mergerfs zeal zotero-bin clash-verge okular imagemagick microsoft-edge-stable-bin visual-studio-code-bin
+sudo pacman -S --needed --noconfirm keepassxc mpv npm obsidian quarto-cli-bin rsync fuse sshfs mergerfs zeal zotero-bin clash-verge okular imagemagick microsoft-edge-stable-bin visual-studio-code-bin wemeet-bin
 #: }}}
 
 #: AUR {{{
-paru -S --needed --noconfirm i3wsr dingtalk-bin wemeet-bin wps-office ttf-wps-fonts fcitx5-input-support
+paru -S --needed --noconfirm dingtalk-bin wps-office
 #: }}}
 
 #: Flatpak {{{
