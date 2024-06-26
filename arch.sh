@@ -64,12 +64,14 @@ paru -S --needed --noconfirm fcitx5-input-support
 source ./i3.sh
 source ./fonts.sh
 
-#: Applications {{{
-sudo pacman -S --needed --noconfirm keepassxc mpv npm obsidian quarto-cli-bin rsync fuse sshfs mergerfs zeal zotero-bin clash-verge okular imagemagick microsoft-edge-stable-bin visual-studio-code-bin wemeet-bin
+#: Network {{{
+sudo pacman -S --needed --nocomfirm kdeconnect wireguard-tools systemd-resolvconf
+paru -S --needed --noconfirm easyconnect
 #: }}}
 
-#: AUR {{{
-paru -S --needed --noconfirm dingtalk-bin wps-office
+#: Applications {{{
+sudo pacman -S --needed --noconfirm keepassxc mpv npm obsidian quarto-cli-bin rsync fuse sshfs mergerfs zeal zotero-bin clash-verge okular imagemagick microsoft-edge-stable-bin visual-studio-code-bin wemeet-bin
+paru -S --needed --noconfirm dingtalk-bin wps-office wechat-universal-bwrap
 #: }}}
 
 #: Flatpak {{{
