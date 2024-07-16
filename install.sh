@@ -51,19 +51,6 @@ sudo pacman -S --needed --noconfirm bluez bluez-utils
 paru -S --needed --noconfirm epson-inkjet-printer-escpr footswitch-git
 #: }}}
 
-#: Desktop wm {{{
-sudo pacman -S --needed --noconfirm xdg-utils xorg-server xorg-xinit xorg-xrandr autorandr arandr i3 i3status-rust rofi wezterm maim xclip thunar
-paru -S --needed --noconfirm i3wsr
-#: }}}
-
-#: Input methods {{{
-sudo pacman -S --needed --noconfirm fcitx5-rime fcitx5-nord fcitx5-configtool
-paru -S --needed --noconfirm fcitx5-input-support
-#: }}}
-
-source ./i3.sh
-source ./fonts.sh
-
 #: Network {{{
 sudo pacman -S --needed --nocomfirm kdeconnect wireguard-tools systemd-resolvconf
 paru -S --needed --noconfirm easyconnect
@@ -77,9 +64,3 @@ paru -S --needed --noconfirm dingtalk-bin wps-office wechat-universal-bwrap
 #: Flatpak {{{
 sudo pacman -S --needed --noconfirm flatpak
 #: }}}
-
-source ./nix.sh
-source ./python.sh
-source ./direnv.sh
-source ./node.sh
-source ./rust.sh
