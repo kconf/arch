@@ -4,23 +4,23 @@
 set -e
 
 usage() {
-	echo "Usage: $0 [-p <proxy>]" 1>&2
-	exit 1
+  echo "Usage: $0 [-p <proxy>]" 1>&2
+  exit 1
 }
 
 #: Proxy {{{
 while getopts ":p:" opts; do
-	case "${opts}" in
-	p)
-		proxy=${OPTARG}
-		echo "Using proxy $proxy"
-		export http_proxy=http://$proxy:7890
-		export https_proxy=http://$proxy:7890
-		;;
-	*)
-		usage
-		;;
-	esac
+  case "${opts}" in
+  p)
+    proxy=${OPTARG}
+    echo "Using proxy $proxy"
+    export http_proxy=http://$proxy:7890
+    export https_proxy=http://$proxy:7890
+    ;;
+  *)
+    usage
+    ;;
+  esac
 done
 #: }}}
 
@@ -52,7 +52,7 @@ paru -S --needed --noconfirm epson-inkjet-printer-escpr footswitch-git
 #: }}}
 
 #: Desktop wm {{{
-sudo pacman -S --needed --noconfirm xdg-utils xorg-server xorg-xinit xorg-xrandr autorandr arandr i3 i3status-rust rofi kitty wezterm maim xclip thunar
+sudo pacman -S --needed --noconfirm xdg-utils xorg-server xorg-xinit xorg-xrandr autorandr arandr i3 i3status-rust rofi wezterm maim xclip thunar
 paru -S --needed --noconfirm i3wsr
 #: }}}
 
