@@ -43,7 +43,7 @@ sudo pacman -Syuu --noconfirm
 #: }}}
 
 #: Basic setup {{{
-sudo pacman -S --needed --noconfirm base base-devel linux linux-firmware sudo zsh wget archlinuxcn-keyring vcsh git openssh paru
+sudo pacman -S --needed --noconfirm base base-devel linux linux-firmware sudo zsh wget vcsh git openssh paru
 #: }}}
 
 #: Hardware {{{
