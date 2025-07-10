@@ -9,6 +9,10 @@ paru -S --needed --nocomfirm systemd-resolvconf iwd
 paru -S --needed --noconfirm bluez bluez-utils
 #: }}}
 
+#: Sound {{{
+paru -S --needed --noconfirm wireplumber pipewire pipewire-alsa pipewire-pulse pipewire-jack libpulse pamixer
+#: }}}
+
 #: Printer {{{
 paru -S --needed --noconfirm epson-inkjet-printer-escpr
 #: }}}
